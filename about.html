@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haden Walton About Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* Small screen support */
+      @media screen and (min-width: 320px) {
+        body {
+          /* background-color: #c29718; */
+          grid-template-rows: 10% 55% 30% 5%;
+        }
+
+        /*Row 1*/
+        header h1 {
+          font-size: 4.5rem;
+        }
+
+        /*Row 2*/
+        section p {
+          font-size: clamp(0.75rem, 10vw, 1.0rem);  
+        }
+
+        section p + p {
+          display: none;
+        }
+
+        /*Row 3*/
+        nav ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 90%;
+        }
+
+        nav ul li a {
+          font-size: 2.0rem;
+        }
+
+        /*Row 4*/
+        footer ul li img {
+          width: 75%;
+        }
+
+      }
+
+      /* Medium screen support */
+      @media screen and (min-width:712px) {
+        body {
+          /* background-color: #5413a8; */
+          grid-template-rows: 15% 40% 35% 10%;
+        }
+
+        /*Row 1*/
+        header h1 {
+          font-size: 5.5rem;
+        }
+
+        /*Row 2*/
+        section p + p {
+          display: block;
+        }
+
+        section p {
+          font-size: clamp(0.75rem, 10vw, 1.0rem);  
+        }
+
+        /*Row 3*/
+
+        nav ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 80%;
+          height: 75%;
+        }
+          
+        nav ul li {
+          width: 80%;
+          height: 80%;
+        }
+        nav ul li a {
+          font-size: 2.0rem;
+        }
+
+        /*Row 4*/
+        footer ul li img {
+          width: 50%;
+        }
+      }
+
+      /* Large screen support */
+      @media screen and (min-width: 992px) {  
+        body {
+          /* background-color: #c4a2a2; */
+          grid-template-rows: 15% 55% 20% 10%;
+        }
+
+        /*Row 1*/
+        header h1 {
+          font-size: 6.5rem;
+        }
+
+        /*Row 2*/
+        section p {
+          font-size: clamp(1.0rem, 10vw, 1.25rem);  
+        }
+
+        /*Row 3*/
+        nav ul {
+          height: 75%;
+        }
+          
+        nav ul li {
+          width: 80%;
+          height: 90%;
+        }
+          
+        nav ul li a {
+          font-size: 3.0rem;
+        }
+
+        /*Row 4*/
+        footer ul li img {
+          width: 25%;
+        }
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <!-- Row 1 -->
+    <header> 
+      <h1 class="fadeIn">About Me</h1>
+    </header>
+    
+    <!-- Row 2 -->
+    <section class="fadeInLate">  
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis euismod neque sit amet blandit. Suspendisse laoreet mollis ex sed faucibus. Quisque interdum bibendum turpis. Integer massa tellus, tempor vitae ullamcorper a, lobortis eu ante. Suspendisse volutpat est neque, nec hendrerit urna auctor in. Sed id turpis bibendum, sagittis libero eget, facilisis dolor. In ut lacus non diam scelerisque rhoncus id et libero. Aliquam consectetur nisl sed ligula blandit, sit amet pharetra tortor vulputate. Nulla ac ipsum sit amet arcu viverra pharetra.
+      </p>
+
+      <p><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultricies orci nec ligula convallis, sed efficitur ante maximus. Aenean accumsan risus sit amet est dictum varius. Nullam aliquam rutrum eros vitae viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla facilisi. Maecenas in ante.</p>
+    </section>
+
+    <!-- Row 3 -->
+    <nav class="fadeInLater">
+      <hr>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+      <hr>
+    </nav>
+
+    <!-- Row 4 -->
+    <footer class="fadeInLater">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/haden-w-87440617a/"><img src="Images/linkedin-brands-solid.png" alt="LinkedIn"></a></li>
+        <li><a href="https://github.com/HadenWalton12"><img src="Images/GitHub_Invertocat_Black_Clearspace.png" alt="Github"></a></li>
+        <li><a href="mailto:h_walton@fanshaweonline.ca"><img src="Images/email.png" alt="Email"></a></li>
+      </ul>
+    </footer>
+    
+  </body>
+</html>

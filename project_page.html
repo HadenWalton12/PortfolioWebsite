@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haden Walton Project Page</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      /* Small screen support */
+      @media screen and (min-width: 320px) {
+        body {
+          /* background-color: #c29718; */
+          grid-template-rows: 20% 40% 35% 5%;
+        }
+
+        /*Row 1*/
+        header h1 {
+          font-size: 3.0rem;
+        }
+
+        /*Row 2*/
+        section p {
+          font-size: clamp(0.50rem, 10vw, 0.75rem);  
+        }
+
+        .tech {
+          display: none;
+        }
+
+        /*Row 3*/
+
+        nav ul {
+          list-style: none;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 90%;
+        }
+
+        nav ul li {
+          margin: 1%;
+          width: 80%;
+          height: 90%;
+        }
+
+        nav ul li a {
+          font-size: 2.0rem;
+        }
+
+        /*Row 4*/
+        footer ul li img {
+          width: 75%;
+        }
+
+      }
+
+      /* Medium screen support */
+      @media screen and (min-width: 768px) {
+        body {
+          /* background-color: #5413a8; */
+          grid-template-rows: 22.5% 50% 22.5% 5%;
+        }
+
+        /*Row 1*/
+        header h1 {
+          font-size: 5.5rem;
+        }
+
+        /*Row 2*/
+        section p {
+          font-size: clamp(0.75rem, 10vw, 1.25rem);  
+        }
+
+        .tech {
+          display: block;
+        }
+        .tech h3{
+            font-size: 1.5rem;
+        }
+
+        .tech ul {
+          list-style: disc outside none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 5%; 
+        }
+        .tech ul li{
+            font-size: 1.25rem;
+        }
+
+        /*Row 3*/
+        nav ul {
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 80%;
+          height: 75%;
+        }
+        
+        nav ul li {
+          width: 80%;
+          height: 80%;
+        }
+
+        nav ul li a {
+          font-size: 2.0rem;
+        }
+
+        /*Row 4*/
+        footer ul li img {
+          width: 50%;
+        }
+
+      }
+
+      /* Large screen support */
+      @media screen and (min-width: 992px) {  
+        body {
+          /* background-color: #c4a2a2; */
+          grid-template-rows: 25% 55% 10% 10%;
+        }
+
+        /*Row 1*/
+        header h1 {
+          font-size: 6.5rem;
+        }
+
+        /*Row 2*/
+        section p {
+          font-size: clamp(1.25rem, 10vw, 1.5rem);  
+        }
+
+        .tech {
+          display: block;
+        }
+        .tech h3{
+            font-size: 1.75rem;
+        }
+        
+        .tech ul {
+          list-style: disc outside none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 5%; 
+        }
+        .tech ul li{
+          font-size: 1.5rem;
+        }
+
+        /*Row 3*/
+        nav ul {
+          height: 75%;
+        }
+          
+        nav ul li {
+          width: 80%;
+          height: 90%;
+        }
+          
+        nav ul li a {
+          font-size: 3.0rem;
+        }
+
+        /*Row 4*/
+        footer ul li img {
+          width: 25%;
+        }
+
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- Row 1 -->
+    <header> 
+      <h1 class="fadeIn">Project Page Demo</h1>
+    </header>
+
+    <!-- Row 2 -->
+    <section class="fadeInLate">  
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce facilisis euismod neque sit amet blandit. Suspendisse laoreet mollis ex sed faucibus. Quisque interdum bibendum turpis. Integer massa tellus, tempor vitae ullamcorper a, lobortis eu ante. Suspendisse volutpat est neque, nec hendrerit urna auctor in. Sed id turpis bibendum, sagittis libero eget, facilisis dolor. In ut lacus non diam scelerisque rhoncus id et libero. Aliquam consectetur nisl sed ligula blandit, sit amet pharetra tortor vulputate. Nulla ac ipsum sit amet arcu viverra pharetra.
+        <br><br>
+        Pellentesque dignissim enim id felis interdum, in faucibus risus commodo. Proin lobortis sem in nibh rutrum consequat.
+      </p>
+
+      <div class="tech">
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Tech 1</li>
+          <li>Tech 2</li>
+          <li>Tech 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Row 3 -->
+    <nav class="fadeInLater">
+      <hr>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About Me</a></li>
+      </ul>
+      <hr>
+    </nav>
+
+    <!-- Row 4 -->
+    <footer class="fadeInLater">
+      <ul>
+        <li><a href="https://www.linkedin.com/in/haden-w-87440617a/"><img src="Images/linkedin-brands-solid.png" alt="LinkedIn"></a></li>
+        <li><a href="https://github.com/HadenWalton12"><img src="Images/GitHub_Invertocat_Black_Clearspace.png" alt="Github"></a></li>
+        <li><a href="mailto:h_walton@fanshaweonline.ca"><img src="Images/email.png" alt="Email"></a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
